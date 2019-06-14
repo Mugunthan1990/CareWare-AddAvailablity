@@ -19,44 +19,43 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable
 
 public class availablity{
-	
+
 	@Keyword
 	def addAvilablity ( Year , Month, StartDate ) {
 		WebUI.click(findTestObject('AddAvilablity/GoToAddAvilablityPage'))
-		
+
 		WebUI.delay(3)
-		
+
 		WebUI.click(findTestObject('AddAvilablity/span_Add Availability'))
-		
+
 		WebUI.delay(1)
-		
+
 		//Open Clander for the Start Date
 		WebUI.click(findTestObject('AddAvilablity/dp_addAvailablityStartDate'))
-		
+
 		WebUI.delay(1)
-		
+
 		//Set Date and schedule time for te start Date
 		WebUI.selectOptionByLabel(findTestObject('AddAvilablity/btn_dd_Change_year'), Year, false)
-		
+
 		WebUI.delay(1)
-		
+
 		WebUI.selectOptionByLabel(findTestObject('AddAvilablity/btn_dd_change_month'), Month, false)
-		
+
 		WebUI.delay(1)
-		
+
 		WebUI.click(findTestObject('AddAvilablity/ele_dayToSelect', [('SetDate') : StartDate]))
-		
+
 		WebUI.delay(1)
-		
+
 		WebUI.click(findTestObject('AddAvilablity/div_D120700 AM - 0700 PM'))
 		WebUI.click(findTestObject('Object Repository/AddAvilablity/AddAvailablity_Submit'))
-		
+
 		WebUI.click(findTestObject('Object Repository/AddAvilablity/AddAvailablity_Cancel'))
-		
+
 		// Cheack the added avaiilablilty
 		WebUI.click(findTestObject('AddAvilablity/GoToAddAvilablityPage'))
-		
-		
+
+
 	}
-	
 }

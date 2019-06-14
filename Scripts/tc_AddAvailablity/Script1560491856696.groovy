@@ -14,10 +14,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.katalon.plugin.keyword.calendar.SetDateCalendarKeyword as SetDateCalendarKeyword
 
-
-
 //Login
-CustomKeywords.'com.careware.common.LogIn.logIn'('asanka', '123456')
+CustomKeywords.'com.careware.common.LogIn.logIn'('http://localhost/careware', 'Asanka', '123456')
+
 WebUI.delay(3)
 
 //Add Vailablity

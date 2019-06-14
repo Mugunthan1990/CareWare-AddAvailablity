@@ -21,12 +21,12 @@ import internal.GlobalVariable
 public class LogIn {
 
 	@Keyword
-	def logIn(Username,Password){
+	def logIn(url,Username,Password){
 
 		//Open browser
 		WebUI.openBrowser('')
 		//Go to the perticuler website
-		WebUI.navigateToUrl('http://localhost/careware')
+		WebUI.navigateToUrl(url)
 		//Login
 		WebUI.setText(findTestObject('Page_CareWare  Log in/input_username'), Username, FailureHandling.STOP_ON_FAILURE)
 		WebUI.setText(findTestObject('Page_CareWare  Log in/input_password'), Password)
