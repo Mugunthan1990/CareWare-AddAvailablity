@@ -15,5 +15,38 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/tc_AddAvailablity</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>586b99a5-8bfe-4644-9039-0c693ff8db30</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/AddAvailablityDate</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>586b99a5-8bfe-4644-9039-0c693ff8db30</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Year</value>
+         <variableId>f7927245-dcd2-481a-be33-4bd756c9ebf4</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>586b99a5-8bfe-4644-9039-0c693ff8db30</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Month</value>
+         <variableId>6705286d-80ed-4ede-a711-f1aef9ee01dc</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>586b99a5-8bfe-4644-9039-0c693ff8db30</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>startDate</value>
+         <variableId>9408aa23-6e6a-4f20-bdea-6448c79b3b7d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>586b99a5-8bfe-4644-9039-0c693ff8db30</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>SetShift</value>
+         <variableId>46aab963-0667-4a10-b11e-8924d7de0de3</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

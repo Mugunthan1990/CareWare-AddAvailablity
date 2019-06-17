@@ -15,12 +15,12 @@ import internal.GlobalVariable as GlobalVariable
 import com.katalon.plugin.keyword.calendar.SetDateCalendarKeyword as SetDateCalendarKeyword
 
 //Login
-CustomKeywords.'com.careware.common.LogIn.logIn'('http://localhost/careware', 'Asanka', '123456')
+CustomKeywords.'com.careware.common.LogIn.logIn'(GlobalVariable.G_url, GlobalVariable.G_username, GlobalVariable.G_password)
 
 WebUI.delay(3)
 
 //Add Vailablity
-CustomKeywords.'com.careware.common.availablity.addAvilablity'('2019', 'July', '13')
+CustomKeywords.'com.careware.common.availablity.addAvilablity'(Year, Month, startDate, SetShift)
 
 //Close the browser
 not_run: WebUI.closeBrowser()

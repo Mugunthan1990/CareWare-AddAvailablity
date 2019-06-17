@@ -21,7 +21,7 @@ import internal.GlobalVariable
 public class availablity{
 
 	@Keyword
-	def addAvilablity ( Year , Month, StartDate ) {
+	def addAvilablity ( Year , Month, startDate,SetShift ) {
 		WebUI.click(findTestObject('AddAvilablity/GoToAddAvilablityPage'))
 
 		WebUI.delay(3)
@@ -44,11 +44,12 @@ public class availablity{
 
 		WebUI.delay(1)
 
-		WebUI.click(findTestObject('AddAvilablity/ele_dayToSelect', [('SetDate') : StartDate]))
+		WebUI.click(findTestObject('AddAvilablity/ele_dayToSelect', [('SetDate') : startDate ]))
 
 		WebUI.delay(1)
 
-		WebUI.click(findTestObject('AddAvilablity/div_D120700 AM - 0700 PM'))
+		WebUI.click(findTestObject('Object Repository/AddAvilablity/ShiftSelector', [('SetShift') : SetShift]))
+		
 		WebUI.click(findTestObject('Object Repository/AddAvilablity/AddAvailablity_Submit'))
 
 		WebUI.click(findTestObject('Object Repository/AddAvilablity/AddAvailablity_Cancel'))

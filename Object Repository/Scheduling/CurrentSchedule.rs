@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ele_dayToSelect</name>
+   <name>CurrentSchedule</name>
    <tag></tag>
-   <elementGuidId>4f0b7be9-0954-490e-9fbe-d3352813c546</elementGuidId>
+   <elementGuidId>27b88ffc-4144-43c5-b643-b54959685ee6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//a[text() = '${SetDate}']</value>
+         <value>//span[text()= 'Current Schedule']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//a[text() = '${SetDate}']</value>
+      <value>//span[text()= 'Current Schedule']</value>
    </webElementProperties>
 </WebElementEntity>

@@ -5,4 +5,32 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>dde7bcc0-d4df-4797-a379-85198aafd351</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f7927245-dcd2-481a-be33-4bd756c9ebf4</id>
+      <masked>false</masked>
+      <name>Year</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6705286d-80ed-4ede-a711-f1aef9ee01dc</id>
+      <masked>false</masked>
+      <name>Month</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9408aa23-6e6a-4f20-bdea-6448c79b3b7d</id>
+      <masked>false</masked>
+      <name>startDate</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>46aab963-0667-4a10-b11e-8924d7de0de3</id>
+      <masked>false</masked>
+      <name>SetShift</name>
+   </variable>
 </TestCaseEntity>

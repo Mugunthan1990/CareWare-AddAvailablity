@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ele_dayToSelect</name>
+   <name>MyCalendar</name>
    <tag></tag>
-   <elementGuidId>4f0b7be9-0954-490e-9fbe-d3352813c546</elementGuidId>
+   <elementGuidId>c57abe63-f86c-4a3b-be6e-6c9b3b029a22</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//a[text() = '${SetDate}']</value>
+         <value>//span[text()= 'My Calendar']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//a[text() = '${SetDate}']</value>
+      <value>//span[text()= 'My Calendar']</value>
    </webElementProperties>
 </WebElementEntity>

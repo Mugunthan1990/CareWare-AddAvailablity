@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ele_dayToSelect</name>
+   <name>SchedulingGroupDrobDawn</name>
    <tag></tag>
-   <elementGuidId>4f0b7be9-0954-490e-9fbe-d3352813c546</elementGuidId>
+   <elementGuidId>55972640-ab35-4d1b-8bbc-78454d21a542</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//a[text() = '${SetDate}']</value>
+         <value>//a[@id='scheduleGroup']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +21,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//a[text() = '${SetDate}']</value>
+      <value>//a[@id='scheduleGroup']</value>
    </webElementProperties>
 </WebElementEntity>
