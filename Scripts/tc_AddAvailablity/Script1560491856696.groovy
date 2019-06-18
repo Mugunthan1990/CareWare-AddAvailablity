@@ -19,6 +19,10 @@ CustomKeywords.'com.careware.common.LogIn.logIn'(GlobalVariable.G_url, GlobalVar
 
 WebUI.delay(3)
 
+CustomKeywords.'com.careware.common.commonNavigationFromMainPage.parentNavigation'('availability')
+
+WebUI.delay(3)
+
 //Add Vailablity
 CustomKeywords.'com.careware.common.availablity.addAvilablity'(Year, Month, startDate, SetShift)
 

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>CurrentSchedule</name>
+   <description>To navigate to the chiled of the parent navigation page from Main page</description>
+   <name>btn_ChildNavigationTap</name>
    <tag></tag>
-   <elementGuidId>27b88ffc-4144-43c5-b643-b54959685ee6</elementGuidId>
+   <elementGuidId>e73ecba1-8a43-4b80-aef8-6b55251d93a9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[text()= 'Current Schedule']</value>
+         <value>//span[text() = 'ChildNavigationTap']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[text()= 'Current Schedule']</value>
+      <value>//span[text() = 'ChildNavigationTap']</value>
    </webElementProperties>
 </WebElementEntity>

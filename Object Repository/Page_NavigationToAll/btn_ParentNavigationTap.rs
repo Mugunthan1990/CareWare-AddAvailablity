@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SchedulingGroupDrobDawn</name>
+   <name>btn_ParentNavigationTap</name>
    <tag></tag>
-   <elementGuidId>55972640-ab35-4d1b-8bbc-78454d21a542</elementGuidId>
+   <elementGuidId>27b88ffc-4144-43c5-b643-b54959685ee6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//a[@id='scheduleGroup']</value>
+         <value>//span[text()= '${ParentNavigationTap}']|//a[@id='${ParentNavigationTap}']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//a[@id='scheduleGroup']</value>
+      <value>//span[text()= '${ParentNavigationTap}']|//a[@id='${ParentNavigationTap}']</value>
    </webElementProperties>
 </WebElementEntity>

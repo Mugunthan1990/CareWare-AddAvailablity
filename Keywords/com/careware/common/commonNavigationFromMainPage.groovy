@@ -18,22 +18,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import internal.GlobalVariable
 
-public class LogIn {
+public class commonNavigationFromMainPage {
+
 
 	@Keyword
-	def logIn(url,Username,Password){
+	def parentNavigation (data_ParentNavigationTap) {
 
-		//Open browser
-		WebUI.openBrowser('')
-		//Go to the perticuler website
-		WebUI.navigateToUrl(url)
-		//Login
-		WebUI.setText(findTestObject('Page_CareWare  Log in/input_username'), Username, FailureHandling.STOP_ON_FAILURE)
-		WebUI.setText(findTestObject('Page_CareWare  Log in/input_password'), Password)
-		WebUI.click(findTestObject('Page_CareWare  Log in/button_Log In'))
-		println("\n    Login Sucessfull   \n")
+		WebUI.click(findTestObject('Page_NavigationToAll/btn_ParentNavigationTap',[('ParentNavigationTap') : data_ParentNavigationTap]))
+	}
+
+	@Keyword
+	def ChildNavigation (data_ChildNavigationTap) {
+
+		WebUI.click(findTestObject('Page_NavigationToAll/btn_ParentNavigationTap', [('ChildNavigationTap') : data_ChildNavigationTap]))
 	}
 }
-
-
-

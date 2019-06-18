@@ -22,40 +22,38 @@ public class availablity{
 
 	@Keyword
 	def addAvilablity ( Year , Month, startDate,SetShift ) {
-		WebUI.click(findTestObject('AddAvilablity/GoToAddAvilablityPage'))
-
-		WebUI.delay(3)
-
-		WebUI.click(findTestObject('AddAvilablity/span_Add Availability'))
-
-		WebUI.delay(1)
-
+		
+		WebUI.click(findTestObject('Page_AddAvilablity/span_Add Availability'))
+		
 		//Open Clander for the Start Date
-		WebUI.click(findTestObject('AddAvilablity/dp_addAvailablityStartDate'))
+		WebUI.delay(1)
+		
+		
+		WebUI.click(findTestObject('Page_AddAvilablity/dp_addAvailablityStartDate'))
 
 		WebUI.delay(1)
 
 		//Set Date and schedule time for te start Date
-		WebUI.selectOptionByLabel(findTestObject('AddAvilablity/btn_dd_Change_year'), Year, false)
+		WebUI.selectOptionByLabel(findTestObject('Page_AddAvilablity/btn_dd_Change_year'), Year, false)
 
 		WebUI.delay(1)
 
-		WebUI.selectOptionByLabel(findTestObject('AddAvilablity/btn_dd_change_month'), Month, false)
+		WebUI.selectOptionByLabel(findTestObject('Page_AddAvilablity/btn_dd_change_month'), Month, false)
 
 		WebUI.delay(1)
 
-		WebUI.click(findTestObject('AddAvilablity/ele_dayToSelect', [('SetDate') : startDate ]))
+		WebUI.click(findTestObject('Page_AddAvilablity/ele_dayToSelect', [('SetDate') : startDate]))
 
 		WebUI.delay(1)
 
-		WebUI.click(findTestObject('Object Repository/AddAvilablity/ShiftSelector', [('SetShift') : SetShift]))
-		
-		WebUI.click(findTestObject('Object Repository/AddAvilablity/AddAvailablity_Submit'))
+		WebUI.click(findTestObject('Page_AddAvilablity/ShiftSelector', [('SetShift') : SetShift]))
 
-		WebUI.click(findTestObject('Object Repository/AddAvilablity/AddAvailablity_Cancel'))
+		WebUI.click(findTestObject('Page_AddAvilablity/AddAvailablity_Submit'))
 
-		// Cheack the added avaiilablilty
-		WebUI.click(findTestObject('AddAvilablity/GoToAddAvilablityPage'))
+		WebUI.click(findTestObject('Page_AddAvilablity/AddAvailablity_Cancel'))
+
+		// Check the added avaiilablilty
+		WebUI.click(findTestObject('Page_AddAvilablity/GoToAddAvilablityPage'))
 
 
 	}
