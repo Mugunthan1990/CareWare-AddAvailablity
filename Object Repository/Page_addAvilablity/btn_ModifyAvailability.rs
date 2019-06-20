@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_ParentNavigationTap</name>
+   <name>btn_ModifyAvailability</name>
    <tag></tag>
-   <elementGuidId>27b88ffc-4144-43c5-b643-b54959685ee6</elementGuidId>
+   <elementGuidId>54e42392-fdea-4887-8ce7-836cb6ea3b2e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[text()= '${ParentNavigationTap}']</value>
+         <value>//span[text()= 'Modify']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[text()= '${ParentNavigationTap}']</value>
+      <value>//span[text()= 'Modify']</value>
    </webElementProperties>
 </WebElementEntity>

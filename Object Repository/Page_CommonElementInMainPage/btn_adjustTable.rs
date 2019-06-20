@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>btn_ParentNavigationTap</name>
+   <description>Toggle navigation bare to full text</description>
+   <name>btn_adjustTable</name>
    <tag></tag>
-   <elementGuidId>27b88ffc-4144-43c5-b643-b54959685ee6</elementGuidId>
+   <elementGuidId>47eeeded-4054-4c04-acfa-88d7b6409d1b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[text()= '${ParentNavigationTap}']</value>
+         <value>//a[@id='adjustTable']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[text()= '${ParentNavigationTap}']</value>
+      <value>//a[@id='adjustTable']</value>
    </webElementProperties>
 </WebElementEntity>

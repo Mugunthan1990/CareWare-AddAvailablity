@@ -22,13 +22,20 @@ public class commonNavigationFromMainPage {
 
 
 	@Keyword
+
 	def parentNavigation (data_ParentNavigationTap) {
+
+
+		/// Uses Xpath of innertext it contains or ID of it //span[text()= '${ParentNavigationTap}']|//a[@id='${ParentNavigationTap}'] --- Example Text - Availability,scheduleGroup | Example ID - availability,Schedules
+
 
 		WebUI.click(findTestObject('Page_NavigationToAll/btn_ParentNavigationTap',[('ParentNavigationTap') : data_ParentNavigationTap]))
 	}
 
 	@Keyword
 	def ChildNavigation (data_ChildNavigationTap) {
+
+		/// Uses XPath of innertext it contains and Its Id  //span[text() = '${ChildNavigationTap}']|//a[@id='${ChildNavigationTap}'] --- Example Text - Settings | Example ID - dsSettings
 
 		WebUI.click(findTestObject('Page_NavigationToAll/btn_ParentNavigationTap', [('ChildNavigationTap') : data_ChildNavigationTap]))
 	}

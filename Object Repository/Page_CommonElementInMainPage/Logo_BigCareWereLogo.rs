@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_ParentNavigationTap</name>
+   <name>Logo_BigCareWereLogo</name>
    <tag></tag>
-   <elementGuidId>27b88ffc-4144-43c5-b643-b54959685ee6</elementGuidId>
+   <elementGuidId>f662ec83-e790-4c60-99aa-77cb8e3a54f4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[text()= '${ParentNavigationTap}']</value>
+         <value>//b[(text() = 'CareWare')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[text()= '${ParentNavigationTap}']</value>
+      <value>//b[(text() = 'CareWare')]</value>
    </webElementProperties>
 </WebElementEntity>

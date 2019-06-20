@@ -33,4 +33,32 @@
       <masked>false</masked>
       <name>SetShift</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b19ff5cb-69d0-46ad-918a-af0445510994</id>
+      <masked>false</masked>
+      <name>data_ParentNavigationTap</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>bb50f930-5b64-481a-8d00-6135373d6532</id>
+      <masked>false</masked>
+      <name>data_ModifyDate</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>735e45cf-7063-4fba-bf63-0eabfb88b5d1</id>
+      <masked>false</masked>
+      <name>data_ModifyMonth</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2fba1aa4-7b13-48e4-8efd-d91e3fc10b0a</id>
+      <masked>false</masked>
+      <name>data_MofifyShift</name>
+   </variable>
 </TestCaseEntity>

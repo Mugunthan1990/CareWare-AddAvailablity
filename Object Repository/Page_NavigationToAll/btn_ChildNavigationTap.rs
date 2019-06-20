@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[text() = 'ChildNavigationTap']</value>
+         <value>//span[text() = '${ChildNavigationTap}']|//a[@id='${ChildNavigationTap}'][count(. | //*[@ref_element = 'Object Repository/Page_NavigationToAll/btn_ParentNavigationTap']) = count(//*[@ref_element = 'Object Repository/Page_NavigationToAll/btn_ParentNavigationTap'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[text() = 'ChildNavigationTap']</value>
+      <value>//span[text() = '${ChildNavigationTap}']|//a[@id='${ChildNavigationTap}']</value>
    </webElementProperties>
 </WebElementEntity>

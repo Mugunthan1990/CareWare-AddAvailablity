@@ -31,6 +31,7 @@ public class LogIn {
 		WebUI.setText(findTestObject('Page_CareWare  Log in/input_username'), Username, FailureHandling.STOP_ON_FAILURE)
 		WebUI.setText(findTestObject('Page_CareWare  Log in/input_password'), Password)
 		WebUI.click(findTestObject('Page_CareWare  Log in/button_Log In'))
+		WebUI.click(findTestObject('Object Repository/Page_CommonElementInMainPage/btn_adjustTable'))
 		println("\n    Login Sucessfull   \n")
 	}
 }

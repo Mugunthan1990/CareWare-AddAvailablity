@@ -22,39 +22,85 @@ public class availablity{
 
 	@Keyword
 	def addAvilablity ( Year , Month, startDate,SetShift ) {
-		
-		WebUI.click(findTestObject('Page_AddAvilablity/span_Add Availability'))
-		
+
+		WebUI.click(findTestObject('Page_addAvilablity/span_Add Availability'))
+
 		//Open Clander for the Start Date
 		WebUI.delay(1)
-		
-		
-		WebUI.click(findTestObject('Page_AddAvilablity/dp_addAvailablityStartDate'))
+
+
+		WebUI.click(findTestObject('Page_addAvilablity/dp_addAvailablityStartDate'))
 
 		WebUI.delay(1)
 
 		//Set Date and schedule time for te start Date
-		WebUI.selectOptionByLabel(findTestObject('Page_AddAvilablity/btn_dd_Change_year'), Year, false)
+		WebUI.selectOptionByLabel(findTestObject('Page_addAvilablity/btn_dd_Change_year'), Year, false)
 
 		WebUI.delay(1)
 
-		WebUI.selectOptionByLabel(findTestObject('Page_AddAvilablity/btn_dd_change_month'), Month, false)
+		WebUI.selectOptionByLabel(findTestObject('Page_addAvilablity/btn_dd_change_month'), Month, false)
 
 		WebUI.delay(1)
 
-		WebUI.click(findTestObject('Page_AddAvilablity/ele_dayToSelect', [('SetDate') : startDate]))
+		WebUI.click(findTestObject('Page_addAvilablity/ele_dayToSelect', [('SetDate') : startDate]))
 
 		WebUI.delay(1)
 
-		WebUI.click(findTestObject('Page_AddAvilablity/ShiftSelector', [('SetShift') : SetShift]))
+		WebUI.click(findTestObject('Page_addAvilablity/ShiftSelector', [('SetShift') : SetShift]))
+		WebUI.delay(1)
 
-		WebUI.click(findTestObject('Page_AddAvilablity/AddAvailablity_Submit'))
+		WebUI.click(findTestObject('Page_addAvilablity/AddAvailablity_Submit'))
+		WebUI.delay(1)
 
-		WebUI.click(findTestObject('Page_AddAvilablity/AddAvailablity_Cancel'))
+		WebUI.click(findTestObject('Page_addAvilablity/AddAvailablity_Cancel'))
+		WebUI.delay(1)
 
-		// Check the added avaiilablilty
-		WebUI.click(findTestObject('Page_AddAvilablity/GoToAddAvilablityPage'))
 
+
+	}
+
+	@Keyword
+	def modify (Year, data_ModifyMonth, data_ModifyDate, data_MofifyShift) {
+
+		WebUI.click(findTestObject('Page_addAvilablity/btn_ModifyAvailability'))
+		WebUI.delay(1)
+
+		WebUI.click(findTestObject('Page_addAvilablity/dp_addAvailablityStartDate'))
+
+		WebUI.delay(1)
+
+		//Set Date and schedule time for the start Date
+		WebUI.selectOptionByLabel(findTestObject('Page_addAvilablity/btn_dd_Change_year'), Year, false)
+
+		WebUI.delay(1)
+
+		WebUI.selectOptionByLabel(findTestObject('Page_addAvilablity/btn_dd_change_month'), data_ModifyMonth, false)
+
+		WebUI.delay(1)
+
+		WebUI.click(findTestObject('Page_addAvilablity/ele_dayToSelect', [('SetDate') : data_ModifyDate]))
+
+		WebUI.delay(1)
+
+		WebUI.click(findTestObject('Page_addAvilablity/ShiftSelector', [('SetShift') : data_MofifyShift]))
+		WebUI.delay(1)
+
+		WebUI.click(findTestObject('Page_addAvilablity/AddAvailablity_Submit'))
+		WebUI.delay(1)
+		WebUI.click(findTestObject('Page_addAvilablity/AddAvailablity_Cancel'))
+		WebUI.delay(1)
+
+	}
+	
+	@Keyword
+	def DeleteAvailability (){
+
+		WebUI.click(findTestObject('Object Repository/Page_addAvilablity/btn_DeleteAvilablity'))
+		WebUI.delay(1)
+
+		WebUI.click(findTestObject('Object Repository/Page_addAvilablity/btn_DeleteAvailabilityConformation'))
+
+		WebUI.delay(1)
 
 	}
 }

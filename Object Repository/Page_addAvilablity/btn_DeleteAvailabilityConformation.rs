@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_ParentNavigationTap</name>
+   <name>btn_DeleteAvailabilityConformation</name>
    <tag></tag>
-   <elementGuidId>27b88ffc-4144-43c5-b643-b54959685ee6</elementGuidId>
+   <elementGuidId>3ecf7283-0e52-4c73-9935-345c684c3f4f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[text()= '${ParentNavigationTap}']</value>
+         <value>//button[@id='button-0']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[text()= '${ParentNavigationTap}']</value>
+      <value>//button[@id='button-0']</value>
    </webElementProperties>
 </WebElementEntity>
